@@ -65,6 +65,7 @@
 @media (max-width: 90.265em) {
   .img img {
     width: 42rem;
+    height: 55rem;
   }
 }
 
@@ -79,6 +80,12 @@
   }
   .about a {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-height: 31.25em) {
+  .main {
+    height: 150vh;
   }
 }
 

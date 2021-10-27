@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Header from "./Pages/Home/Header";
 import Main from "./Pages/Home/Main";
+import Speicaliest from "./Pages/Home/Speicaliest";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" exact>
         <Header />
         <Main />
+        <Speicaliest />
       </Route>
     </Fragment>
   );
