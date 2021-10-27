@@ -1,0 +1,428 @@
+.continer {
+  width: 100%;
+  height: 95vh;
+  background-image: linear-gradient(
+    135deg,
+    #051937 50%,
+    #004d7a 50% 70%,
+    #519452 70% 100%
+  );
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.navigation {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+}
+
+.navigation h6 {
+  font-size: 2rem;
+  color: #4a8f4b;
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+
+.navigation ul {
+  display: flex;
+  color: #4a8f4b;
+  list-style: none;
+}
+
+.navigation ul li {
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #4a8f4b;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.navigation ul li a:hover {
+  color: #eeee;
+}
+
+.img {
+  grid-column: 5/9;
+  grid-row: 2/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.img img {
+  width: 80rem;
+  height: 70rem;
+}
+
+.backgroundImg {
+  position: relative;
+  grid-column: 7/-1;
+  grid-row: 4/10;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundImg img {
+  height: 40rem;
+  width: 100%;
+}
+
+.title {
+  grid-column: 2/5;
+  grid-row: 3/7;
+}
+
+.title h1 {
+  font-size: 10rem;
+  font-weight: bold;
+  color: #4a8f4b;
+}
+
+.title h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #4a8f4b;
+}
+
+.title h3 {
+  font-size: 4rem;
+  color: #eeee;
+  margin-top: 1rem;
+}
+
+.link {
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.link a {
+  text-decoration: none;
+  color: rgb(82, 202, 88);
+  border: 2px solid rgb(82, 202, 88);
+  padding: 2rem 1.5rem;
+  border-radius: 2rem;
+  transition: 0.5s;
+  position: relative;
+  animation: button 0.4s;
+}
+
+@keyframes button {
+  from {
+    top: 2rem;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.link a:hover {
+  background-color: rgba(158, 158, 158, 0.5);
+}
+
+.Ui {
+  grid-column: 2/4;
+  grid-row: 8/9;
+  font-size: 1.4rem;
+  color: rgba(219, 219, 219, 0.933);
+  font-weight: bold;
+}
+
+.Ui::marker {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.933);
+}
+
+.social {
+  grid-column: 9/-1;
+  grid-row: 3/5;
+  display: flex;
+  z-index: 999;
+  margin-right: 2rem;
+  animation: social 0.5s;
+}
+
+@keyframes social {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.social div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social a {
+  margin-top: 1.2rem;
+}
+
+@media (max-width: 90.625em) {
+  .img img {
+    width: 60rem;
+    height: 60rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .img {
+    grid-row: 2/-1;
+  }
+  .img img {
+    width: 50rem;
+    height: 50rem;
+  }
+  .social {
+    grid-row: 2/4;
+  }
+  .social div {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 51.25em) {
+  .title h1 {
+    font-size: 8rem;
+  }
+
+  .title h2 {
+    font-size: 5rem;
+  }
+
+  .title h3 {
+    font-size: 3rem;
+  }
+  .link {
+    font-size: 1.5rem;
+  }
+  .img {
+    justify-content: flex-start;
+  }
+  .img img {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+@media (max-height: 31.25em) {
+  .title {
+    grid-row: 2/7;
+  }
+  .img {
+    align-items: flex-end;
+    position: relative;
+  }
+  .img img {
+    position: relative;
+    top: 4rem;
+  }
+  .backgroundImg img {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 44.375em) {
+  .title {
+    grid-column: 2/6;
+    grid-row: 2/6;
+  }
+  .img {
+    grid-column: 4/-1;
+    grid-row: 1/-1;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+}
+
+@media (max-height: 31.25em) {
+  .title h1 {
+    font-size: 8rem;
+  }
+
+  .title h2 {
+    font-size: 3rem;
+  }
+
+  .title h3 {
+    font-size: 2rem;
+  }
+  .link {
+    font-size: 1.5rem;
+  }
+  .img {
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    left: 5rem;
+  }
+  .img img {
+    width: 50rem;
+    height: 30rem;
+    top: 0rem;
+  }
+}
+
+@media (max-height: 27.5em) {
+  .img {
+    align-items: flex-end;
+    justify-content: centers;
+  }
+  .img img {
+    width: 40rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 36.25em) {
+  .navigation h6 {
+    font-size: 1.7rem;
+  }
+  .navigation ul li {
+    font-size: 1.1rem;
+  }
+  .title h1 {
+    font-size: 6rem;
+  }
+
+  .title h2 {
+    font-size: 4rem;
+  }
+
+  .title h3 {
+    font-size: 2rem;
+  }
+  .link {
+    font-size: 1.3rem;
+  }
+  .img {
+    grid-column: 4/-1;
+    grid-row: 5/8;
+  }
+  .img img {
+    width: 30rem;
+    height: 30rem;
+  }
+  .backgroundImg {
+    grid-column: 6/-1;
+    grid-row: 6/10;
+  }
+  .backgroundImg img {
+    height: 30rem;
+  }
+  .social {
+    grid-column: 9/-1;
+    grid-row: 3/5;
+  }
+}
+
+@media (max-width: 28.125em) {
+  .navigation h6 {
+    margin-right: 1rem;
+  }
+  .img {
+    grid-column: 5/8;
+    grid-row: 4/9;
+  }
+  .img img {
+    width: 26rem;
+    height: 26rem;
+  }
+  .backgroundImg img {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 21.875em) {
+  .navigation h6 {
+    margin-left: 2rem;
+  }
+  .navigation ul li {
+    margin-left: 1rem;
+  }
+  .title {
+    grid-column: 2/8;
+  }
+  .title h1 {
+    font-size: 6rem;
+  }
+
+  .title h2 {
+    font-size: 3.5rem;
+  }
+
+  .title h3 {
+    font-size: 2rem;
+  }
+  .link {
+    font-size: 1.2rem;
+  }
+
+  .Ui {
+    grid-column: 2/6;
+    grid-row: 8/9;
+  }
+  .social {
+    grid-column: 9/-1;
+    grid-row: 4/5;
+  }
+}
+
+@media (max-height: 48.75em) {
+  .title h1 {
+    font-size: 5rem;
+  }
+
+  .link {
+    margin-top: 3rem;
+  }
+  .img {
+    grid-column: 5/8;
+    grid-row: 5/9;
+  }
+  .Ui {
+    grid-column: 2/6;
+    grid-row: 8/-1;
+    position: relative;
+    top: 1.3rem;
+  }
+}
+
+@media (max-width: 18.125em) {
+  .navigation ul li {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+  .img {
+    align-items: center;
+    grid-column: 1/-1;
+    grid-row: 5/8;
+  }
+  .Ui {
+    grid-column: 2/8;
+    grid-row: 8/9;
+  }
+}
