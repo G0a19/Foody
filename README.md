@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Under construction, the project is not finished!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Link to the project: [Foody](https://foody-gal.netlify.app/).
 
 ## Available Scripts
 
